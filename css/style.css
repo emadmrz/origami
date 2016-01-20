@@ -1,0 +1,138 @@
+*{
+    font-family: "Yekan",Consolas,Monaco,"Andale Mono",monospace;
+}
+body{
+    background: #F0F0F0;
+}
+.aside{
+
+}
+
+main{
+    margin-top: -50px;
+}
+
+.logo img{
+    height: 190px;
+}
+
+header{
+    background: #ff685d;
+    height: 300px;
+    border-top: 60px solid #F75A4F;
+}
+
+.panel.panel-main{
+
+}
+.panel.panel-main .panel-body{
+
+}
+.panel.panel-main .panel-heading{
+    color: #666;
+}
+.panel.panel-main .panel-heading .title{
+    border-bottom: 2px solid #DDD;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 0 15px 0;
+}
+
+.panel.panel-course{
+    overflow: hidden;
+}
+
+.panel.panel-course .btn-learn.start{
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 3px;
+}
+
+.panel.panel-course .duration span{
+    margin-right: 3px;
+}
+
+.panel.panel-course .image img{
+    width: 100%;
+}
+
+.panel.panel-course .title{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.panel.panel-course .description{
+    font-size: 13px;
+    color: #666;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.navbar{
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand{
+    padding-top: 10px;
+}
+.navbar-brand img{
+    height: 30px;
+}
+
+.btn.btn-learn{
+    background: #ff685d;
+    color: #ffffff;
+}
+.btn.btn-learn:hover{
+    background: #F75A4F;
+    color: #ffffff;
+}
+.btn i{
+    margin-left: 3px;
+    top: 5px;
+}
+.list-menu{
+    padding-top: 5px;
+}
+.list-menu ul{
+    padding: 0;
+    margin: 0;
+}
+.list-menu li{
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #DDD;
+}
+.list-menu li:first-child{
+    padding-top: 0;
+}
+.list-menu li:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.list-menu li a.see_more{
+    font-size: 13px;
+    color: #999;
+}
+.list-menu li a.see_more i{
+    margin-left: 3px;
+}
+.list-menu li .media-left{
+
+}
+.list-menu li .media-object{
+    width: 110px;
+    border-radius: 3px;
+}
+.list-menu li .media-heading{
+    font-size: 14px;
+}
+
+.list-menu li .session-num{
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.list-menu li .session-name{
+    font-size: 12px;
+}
