@@ -3,6 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Learn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
     <link type="text/css" rel="stylesheet" href="css/bootstrap-rtl.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -11,186 +12,280 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse ">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="images/small.png"> </a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav>
-
+<!--header begins-->
 <header>
-    <div class="container">
-        <div class="logo pull-left">
-            <!--<img src="images/logo.png">-->
-        </div>
-    </div>
-</header>
-
-<main>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <aside class="aside">
-
-                    <div class="panel panel-main">
-                        <div class="panel-heading">
-                            <div class="title">جدیدترین جلسات</div>
-                        </div>
-                        <div class="panel-body list-menu">
-                            <ul>
-                                <li>
-                                    <div class="media">
-                                        <div class="media-right">
-                                            <a href="#">
-                                                <img class="media-object" src="images/280012_1f82_3.jpg" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="text-muted session-num">جلسه پنجم (دو روز پیش)</div>
-                                            <h4 class="media-heading">برقراری ارتباط موثر با کارفرمایان</h4>
-                                            <p class="text-muted session-name">آموزش نحوه صحیح جستجو در کار</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="media">
-                                        <div class="media-right">
-                                            <a href="#">
-                                                <img class="media-object" src="images/280012_1f82_3.jpg" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="text-muted session-num">جلسه پنجم (دو روز پیش)</div>
-                                            <h4 class="media-heading">برقراری ارتباط موثر با کارفرمایان</h4>
-                                            <p class="text-muted session-name">آموزش نحوه صحیح جستجو در کار</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="media">
-                                        <div class="media-right">
-                                            <a href="#">
-                                                <img class="media-object" src="images/280012_1f82_3.jpg" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="text-muted session-num">جلسه پنجم (دو روز پیش)</div>
-                                            <h4 class="media-heading">برقراری ارتباط موثر با کارفرمایان</h4>
-                                            <p class="text-muted session-name">آموزش نحوه صحیح جستجو در کار</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="text-center" >
-                                        <a class="see_more" href="#"><i class="fa fa-plus"></i> مشاهده جلسات بیشتر </a>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                </aside>
+    <!--navbar begins-->
+    <nav class="navbar navbar-default main-nav">
+        <div class="container nav-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#">
+                    <img src="images/tinker2.png">
+                </a>
             </div>
-            <div class="col-sm-8">
-                <div class="main">
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right right-menu">
+                    <li class="active"><a href="#">صفحه اصلی</a></li>
+                    <li><a href="#">دوره های آموزشی</a></li>
+                    <li><a href="#">شروع یک استارت آپ</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-left left-menu">
+                    <li class="register">
+                        <a href="#">
+                            <button class="btn btn-xs btn-learn register">
+                                <i class="fa fa-lock"></i>
+                                عضویت در سایت
+                            </button>
+                        </a>
+                    </li>
+                    <li class="login">
+                        <a href="#">
+                            <button class="btn btn-xs btn-default login">
+                                <i class="fa fa-user"></i>
+                                ورود به سایت
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--navbar ends-->
 
-                    <div class="panel panel-main">
-                        <div class="panel-heading">
-                            <div class="title">جدید ترین دوره ها</div>
-                        </div>
-                        <div class="panel-body">
-
-                            <div class="row">
-
-                                <div class="col-sm-4">
-                                    <div class="panel panel-course panel-default">
-                                        <div class="image">
-                                            <img src="images/280012_1f82_3.jpg">
-                                        </div>
-                                        <div class="panel-body">
-                                            <div class="title">برقراری ارتباط موثر با کارفرمایان</div>
-                                            <div class="description" >در این دوره روش های ارتباط موثر با کارفرمایان و افزاد مختلف بیان می شود</div>
-                                            <button class="btn btn-learn btn-block start">  ورود به دوره  </button>
-                                        </div>
-                                        <div class="panel-footer clearfix">
-                                            <span class="pull-right duration">
-                                                <i class="fa fa-clock-o"></i>
-                                                <span>12:30</span>
-                                                ساعت
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <div class="panel panel-course panel-default">
-                                        <div class="image">
-                                            <img src="images/280012_1f82_3.jpg">
-                                        </div>
-                                        <div class="panel-body">
-                                            <div class="title">برقراری ارتباط موثر با کارفرمایان</div>
-                                            <div class="description" >در این دوره روش های ارتباط موثر با کارفرمایان و افزاد مختلف بیان می شود</div>
-                                            <button class="btn btn-learn btn-block start">  ورود به دوره  </button>
-                                        </div>
-                                        <div class="panel-footer clearfix">
-                                            <span class="pull-right duration">
-                                                <i class="fa fa-clock-o"></i>
-                                                <span>12:30</span>
-                                                ساعت
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <div class="panel panel-course panel-default">
-                                        <div class="image">
-                                            <img src="images/280012_1f82_3.jpg">
-                                        </div>
-                                        <div class="panel-body">
-                                            <div class="title">برقراری ارتباط موثر با کارفرمایان</div>
-                                            <div class="description" >در این دوره روش های ارتباط موثر با کارفرمایان و افزاد مختلف بیان می شود</div>
-                                            <button class="btn btn-learn btn-block start">  ورود به دوره  </button>
-                                        </div>
-                                        <div class="panel-footer clearfix">
-                                            <span class="pull-right duration">
-                                                <i class="fa fa-clock-o"></i>
-                                                <span>12:30</span>
-                                                ساعت
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-
+    <!--main header begins-->
+    <div class="main-header">
+        <div class="container">
+            <div class="row tinker-row">
+                <div class="col-md-4 col-md-push-1">
+                    <div class="tinker-box">
+                        <h3 class="text-center tinker-title">تینکر یک رسانه آموزشی است.</h3>
+                        <p class="text-center tinker-description">
+                            باور ما اینست که کاربران ایرانی لایق بهترین ها هستند و باید بهترین و بروزترین فیلم های آموزشی و مقالات در اختیار آنها قرار بگیرد تا بتوانند به سرعت پیشرفت کنند و جزء بهترین ها در صنعت طراحی و برنامه نویسی وب شوند . با ما همراه باشید تا بهترین ها رو لایق بهترین کاربران کنیم
+                        </p>
+                        <button class="btn btn-default btn-md center-block">درباره تینکر بیشتر بدانید</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-push-1">
+                    <div class="text-styler">
+                        <div class="top-bar">
+                            <div class="circles">
+                                <div class="circle circle-red"></div>
+                                <div class="circle circle-yellow"></div>
+                                <div class="circle circle-green"></div>
                             </div>
-
-
-
+                        </div>
+                        <div class="window-content">
+                            <div class="typer">
+                                $ <span class="element"></span>
+                            </div>
+                            <div class="numbers-row">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-</main>
+    <!--main header ends-->
+
+</header>
+<!--header ends-->
+
+<!--main begins-->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <aside class="aside">
+                        <div class="panel panel-default panel-aside">
+                            <div class="panel-heading">
+                                <div class="title">
+                                    جدیدترین جلسات
+                                </div>
+                            </div>
+                            <div class="panel-body list-menu">
+                                <ul>
+                                    <li>
+                                        <div class="media">
+                                            <div class="media-right">
+                                                <a href="#">
+                                                    <div class="menu-object">
+                                                        <img class="media-object" src="images/394968_538b_5.jpg" alt="...">
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="text-muted session-num">جلسه پنجم (دو روز پیش)</div>
+                                                <h4 class="media-heading">برقراری ارتباط موثر با کارفرمایان</h4>
+                                                <p class="text-muted session-name">آموزش نحوه صحیح جستجو در کار</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <div class="media-right">
+                                                <a href="#">
+                                                    <div class="menu-object">
+                                                        <img class="media-object" src="images/394968_538b_5.jpg" alt="...">
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="text-muted session-num">جلسه پنجم (دو روز پیش)</div>
+                                                <h4 class="media-heading">برقراری ارتباط موثر با کارفرمایان</h4>
+                                                <p class="text-muted session-name">آموزش نحوه صحیح جستجو در کار</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <div class="media-right">
+                                                <a href="#">
+                                                    <div class="menu-object">
+                                                        <img class="media-object" src="images/394968_538b_5.jpg" alt="...">
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="text-muted session-num">جلسه پنجم (دو روز پیش)</div>
+                                                <h4 class="media-heading">برقراری ارتباط موثر با کارفرمایان</h4>
+                                                <p class="text-muted session-name">آموزش نحوه صحیح جستجو در کار</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="text-center" >
+                                            <a class="see_more" href="#"><i class="fa fa-plus"></i> مشاهده جلسات بیشتر </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-sm-8">
+                    <div class="main">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="title">
+                                    جدیدترین دوره ها
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="panel panel-default panel-course">
+                                            <div class="image">
+                                                <img src="images/394968_538b_5.jpg" alt="...">
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="title">
+                                                    برقراری ارتباط موثر با کارفرمایان
+                                                </div>
+                                                <div class="description">
+                                                    در این دوره روش های ارتباط موثر با کارفرمایان و افزاد مختلف بیان می شود
+                                                </div>
+                                                <button class="btn btn-block btn-learn start">ورود به دوره</button>
+                                            </div>
+                                            <div class="panel-footer clearfix">
+                                                <span class="pull-right duration">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <span>12:30</span>
+                                                ساعت
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="panel panel-default panel-course">
+                                            <div class="image">
+                                                <img src="images/394968_538b_5.jpg" alt="...">
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="title">
+                                                    برقراری ارتباط موثر با کارفرمایان
+                                                </div>
+                                                <div class="description">
+                                                    در این دوره روش های ارتباط موثر با کارفرمایان و افزاد مختلف بیان می شود
+                                                </div>
+                                                <button class="btn btn-block btn-learn start">ورود به دوره</button>
+                                            </div>
+                                            <div class="panel-footer clearfix">
+                                                <span class="pull-right duration">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <span>12:30</span>
+                                                ساعت
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="panel panel-default panel-course">
+                                            <div class="image">
+                                                <img src="images/394968_538b_5.jpg" alt="...">
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="title">
+                                                    برقراری ارتباط موثر با کارفرمایان
+                                                </div>
+                                                <div class="description">
+                                                    در این دوره روش های ارتباط موثر با کارفرمایان و افزاد مختلف بیان می شود
+                                                </div>
+                                                <button class="btn btn-block btn-learn start">ورود به دوره</button>
+                                            </div>
+                                            <div class="panel-footer clearfix">
+                                                <span class="pull-right duration">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <span>12:30</span>
+                                                ساعت
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<!--main ends-->
 
 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/typed.js"></script>
+<script>
+    $(function(){
+        $(".element").typed({
+            strings: ["Hi Guys, I'm <span style='color:red'>Tinker</span>.^5000 <br>$ Second sentence.^5000 <br>$ Well I wanna Learn how to Code clearly.^5000 <br>$ Hi Emad what do you think about it.^5000 <br>$ We are working hard to make it.^5000 <br>$ "],
+            typeSpeed: 10,
+            loop: true,
+            backDelay: 5000,
+            contentType: 'html'
+        });
+    });
+</script>
+<script src="js/custom.js"></script>
 </body>
 </html>

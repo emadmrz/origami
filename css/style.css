@@ -1,138 +1,647 @@
-*{
-    font-family: "Yekan",Consolas,Monaco,"Andale Mono",monospace;
+/*
+
+----------------------------- Table Of Contents-------------------------------
+    1 - General styles
+    2 - Header
+    3 - Main Header (Tinker Description)
+    4 - Main Header (Text Animation Box)
+    5 - Right Main Menu Content (panel+media+...)
+    6 - Left Main Menu Content (panel+media+...)
+    7 - General Buttons
+    8 - Register Page
+    8 - Media Queries
+
+*/
+
+/*----------------------------- 1 - General styles -------------------------------*/
+
+* {
+    font-family: "Yekan", Consolas, Monaco, "Andale Mono", monospace;
 }
-body{
+
+body {
     background: #F0F0F0;
 }
-.aside{
+img{
+    max-width: 100%;
+}
+/*----------------------------- 2 - Header -------------------------------*/
+header {
+    background: 0 0;
+    background: url("../images/desk-macbook-notebook-camera-canon-photo-hd-wallpaper.jpg");
+    border-bottom: 1px solid #dddddd;
+    /*padding-bottom: 100px;*/
+}
+
+header .navbar {
+    background: 0 0;
+}
+
+.main-nav {
+    border: none;
+}
+
+.nav-container {
+    border-bottom: 2px solid #999;
+}
+
+.nav.navbar-nav {
+    padding-top: 5px;
+}
+
+.nav.navbar-nav.left-menu {
+    margin-left: -45px;
+}
+
+.nav.navbar-nav.left-menu li.register {
+    margin-left: -20px;
+}
+
+.nav.navbar-nav.right-menu {
+    margin-right: 40px
+}
+
+.nav.navbar-nav.right-menu a {
+    font-size: 17px;
+}
+
+.nav.navbar-nav.right-menu li.active a {
+    background: 0 0;
+}
+
+.nav.navbar-nav .btn.register {
+    padding: 3px 12px;
+}
+
+.nav.navbar-nav .btn.login {
+    padding: 3px 12px;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+}
+
+.nav.navbar-nav .btn.login:hover {
+    background: #ddd;
+}
+
+/*----------------------------- 3 - Main Header Tinker Description ----------------*/
+.main-header {
 
 }
 
-main{
-    margin-top: -50px;
+.tinker-row {
+    margin-top: 25px;
 }
 
-.logo img{
-    height: 190px;
+.tinker-row .tinker-box {
+    margin-top: -20px;
 }
 
-header{
-    background: #ff685d;
-    height: 300px;
-    border-top: 60px solid #F75A4F;
-}
-
-.panel.panel-main{
+.main-header .tinker-box {
 
 }
-.panel.panel-main .panel-body{
+
+.main-header .tinker-box .tinker-title {
+    color: #666666;
 
 }
-.panel.panel-main .panel-heading{
-    color: #666;
-}
-.panel.panel-main .panel-heading .title{
-    border-bottom: 2px solid #DDD;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 0 0 15px 0;
+
+.main-header .tinker-box .tinker-description {
+    color: #777777;
+    line-height: 1.9;
 }
 
-.panel.panel-course{
-    overflow: hidden;
+/*----------------------------- 4 - Main Header Text Animation Box ----------------*/
+.text-styler {
+    /*margin-top: 20px;*/
 }
 
-.panel.panel-course .btn-learn.start{
-    font-size: 16px;
-    line-height: 19px;
-    padding-top: 3px;
+.text-styler .top-bar {
+    background-color: #ebebeb;
+    height: 30px;
+    border-radius: 4px 4px 0 0;
+    border-bottom: thin solid #dfdfde;
 }
 
-.panel.panel-course .duration span{
+.text-styler .top-bar .circles {
+    margin: 10px 10px;
+    float: left;
+}
+
+.text-styler .top-bar .circles .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    float: left;
     margin-right: 3px;
 }
 
-.panel.panel-course .image img{
+.circle-red {
+    background-color: #ff685d;
+}
+
+.circle-yellow {
+    background-color: yellow;
+}
+
+.circle-green {
+    background-color: greenyellow;
+}
+
+.text-styler .window-content {
+    background-color: #ffffff;
+    position: relative;
     width: 100%;
+    min-height: 200px;
 }
 
-.panel.panel-course .title{
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.text-styler .window-content .numbers-row {
+    position: absolute;
+    background-color: #ebebeb;
+    min-height: 200px;
+    width: 35px;
+    left: 0;
 }
-.panel.panel-course .description{
+
+.numbers-row > span {
+    display: block;
+    counter-increment: linenumber;
+
+}
+
+.numbers-row > span:before {
+    content: counter(linenumber);
+    padding-right: 0.8em;
+    text-align: right;
+    color: #999999;
+    font-size: 11px;
+}
+
+.typer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 5px 0 0 60px;
+    direction: ltr;
     font-size: 13px;
-    color: #666;
-    text-align: justify;
-    margin-bottom: 15px;
+    color: #000;
+    font-weight: bold;
+    font-family: Consolas, Monaco, "Andale Mono", monospace !important;
 }
 
-.navbar{
-    border-radius: 0;
-    margin-bottom: 0;
+.typer .element {
+    font-family: Consolas, Monaco, "Andale Mono", monospace !important;
 }
 
-.navbar-brand{
-    padding-top: 10px;
-}
-.navbar-brand img{
-    height: 30px;
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
 }
 
-.btn.btn-learn{
-    background: #ff685d;
-    color: #ffffff;
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-.btn.btn-learn:hover{
-    background: #F75A4F;
-    color: #ffffff;
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-.btn i{
-    margin-left: 3px;
-    top: 5px;
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-.list-menu{
-    padding-top: 5px;
+
+/*----------------------------- 5 Right Main Menu Content (panel+media+...) ------------------*/
+main {
+    margin-top: 30px;
 }
-.list-menu ul{
+
+.aside {
+
+}
+
+.panel.panel-aside {
+
+}
+
+.panel .panel-heading {
+    border-bottom: none;
+    background: 0 0;
+}
+
+.panel .panel-heading .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666666;
+    border-bottom: 2px solid #dddddd;
+    padding: 0 0 15px 0;
+}
+
+.list-menu {
+
+}
+
+.list-menu ul {
     padding: 0;
     margin: 0;
 }
-.list-menu li{
+
+.list-menu li {
     list-style: none;
     padding: 10px 0;
     border-bottom: 1px solid #DDD;
 }
-.list-menu li:first-child{
+
+.list-menu li:first-child {
     padding-top: 0;
 }
-.list-menu li:last-child{
+
+.list-menu li:last-child {
     border-bottom: none;
     padding-bottom: 0;
 }
-.list-menu li a.see_more{
+
+.list-menu li a.see_more {
     font-size: 13px;
     color: #999;
 }
-.list-menu li a.see_more i{
+
+.list-menu li a.see_more i {
     margin-left: 3px;
 }
-.list-menu li .media-left{
 
-}
-.list-menu li .media-object{
+.list-menu .menu-object {
     width: 110px;
+}
+
+.list-menu .menu-object img {
+    width: 100%;
     border-radius: 3px;
 }
-.list-menu li .media-heading{
+
+.list-menu li .media-heading {
     font-size: 14px;
 }
 
-.list-menu li .session-num{
+.list-menu li .session-num {
     font-size: 12px;
     margin-bottom: 3px;
 }
-.list-menu li .session-name{
+
+.list-menu li .session-name {
     font-size: 12px;
+}
+
+.panel .description{
+    line-height: 1.9;
+}
+
+/*----------------------------- 6 Left Main Menu Content (panel+media+...) ------------------*/
+.main {
+
+}
+
+.main .panel.panel-course {
+
+}
+
+
+.main .panel.panel-course .image img {
+    max-width: 100%;
+    display: block;
+}
+
+.main .panel.panel-course .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.main .panel.panel-course .description {
+    color: #666666;
+    font-size: 13px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.main .panel.panel-course .btn.start {
+    padding-top: 3px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.panel.panel-course .duration span {
+    margin-right: 3px;
+}
+main .panel.main-course .panel-heading.course-heading{
+
+}
+main .panel.main-course .panel-heading.course-heading i{
+    color: #666666;
+}
+main .panel.main-course .panel-heading .course-buy-num{
+    margin-top: -45px;
+}
+main .panel.main-course .panel-body .image{
+    margin: 30px auto;
+}
+main .panel.main-course .panel-body .course-sessions{
+    margin: 20px auto;
+}
+main .panel.main-course .panel-body .course-sessions table tr{
+    background-color: #eeeeee;
+}
+main .panel.main-course .panel-body .course-sessions table tr:hover{
+    background-color: #ccc;
+}
+main .panel.main-course .panel-body .course-sessions table tr a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #333333;
+}
+.course-sessions table tr a .free-session{
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin-top: -4px;
+    background-color: #ff685d;
+    color: #ffffff;
+}
+.course-sessions table tr a .free-session:hover{
+    background-color: #F75A4F;
+}
+main .panel.main-course .panel-body .course-sessions table i{
+    color: #666666;
+    margin-left: 5px;
+}
+main .panel.main-course .panel-body .course-sessions table td{
+    padding: 15px;
+}
+main .panel.main-course .panel-body .course-sessions table td:first-child{
+    width: 6%;
+}
+main .panel.main-course .panel-body .course-sessions table td:last-child{
+    width: 10%;
+}
+main .panel .panel-body.panel-list{
+    padding-top: 0;
+}
+main .panel .list-group{
+    margin-bottom: 0;
+
+}
+main .panel .list-group li{
+    padding: 10px 0;
+}
+main .panel.skill-panel .panel-body ul.list-group li{
+    border: none;
+}
+main .panel.skill-panel .panel-body ul.list-group li i{
+    margin-left: 5px;
+    color: #666666;
+}
+main .course-price-box{
+    border: 1px solid #cccccc;
+    background-color: #ff685d;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+main .course-price-box:hover{
+    background-color: #F75A4F;
+}
+main .course-price-box a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*----------------------------- 7 - General Buttons -------------------------------*/
+.btn i {
+    margin-left: 3px;
+    top: 5px;
+}
+
+.btn.btn-learn {
+    background: #ff685d;
+    color: #ffffff;
+}
+
+.btn.btn-learn:hover {
+    background: #F75A4F;
+    color: #ffffff;
+}
+input:focus {
+    border-color: #ccc !important;
+}
+
+/*----------------------------- 8 - Register Page -------------------------------*/
+.register-container {
+    float: none ;
+    display: block;
+    margin-top: 50px;
+}
+
+.register-container .register-panel {
+
+}
+
+.register-container .register-panel .panel-heading {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #DDDDDD;
+}
+.register-container .register-panel .register-title{
+    display: inline-block;
+}
+.register-container .register-panel .register-image{
+    margin-top: -4px;
+}
+
+.register-container .register-panel label.control-label {
+    text-align: right;
+    padding-top: 5px;
+}
+
+.panel-heading .glyphicon {
+    margin-left: 5px;
+}
+
+.register-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.registration-link {
+    color: #ff685d;
+}
+
+button.register-btn {
+
+}
+
+/*----------------------------- 9 - Course Main Page -------------------------------*/
+
+
+/*----------------------------- 8 - Media Queries -------------------------------*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    .text-styler {
+        margin-top: 20px;
+    }
+
+    .list-menu li .media-right {
+        display: block;
+        padding-left: 0;
+    }
+
+    .list-menu li .media-right .menu-object {
+        width: auto;
+    }
+
+    .media-heading, .session-name, .session-num {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .duration {
+        text-align: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .description {
+        text-align: center;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .nav.navbar-nav.left-menu {
+        margin-left: -15px;
+    }
+
+    .nav.navbar-nav.right-menu {
+        margin-right: -15px
+    }
+
+    .nav.navbar-nav.left-menu li.register {
+        margin-left: 0px;
+    }
+
+    .nav.navbar-nav a {
+        text-align: center;
+    }
+
+    .navbar-brand.logo {
+        margin-top: -5px;
+    }
+
+    .nav.navbar-nav.left-menu button {
+        background: 0 0;
+        color: #777777;
+        font-size: 17px;
+    }
+
+    .nav.navbar-nav.left-menu button.login {
+        border: none;
+    }
+
+    .nav.navbar-nav.left-menu button:hover {
+        color: #333333;
+    }
+
+    .nav.navbar-nav .btn.login {
+        background: 0 0;
+    }
+
+    .text-styler {
+        display: none;
+    }
+
+    .tinker-row .tinker-box {
+        padding-bottom: 20px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .main .panel.panel-course .image img {
+        width: 100%;
+    }
+
+    .list-menu li .media-right {
+        display: block;
+        padding-left: 0;
+    }
+
+    .list-menu li .media-right .menu-object {
+        width: auto;
+    }
+
+    .media-heading, .session-name, .session-num {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .duration {
+        text-align: center;
+    }
+    main .panel.main-course .panel-heading .course-buy-num{
+        display: none;
+    }
+    main .panel.skill-panel .panel-body ul.list-group li{
+        text-align: center;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
 }
