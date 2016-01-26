@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Learn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/font.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+        header {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<!--header begins-->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 center-block register-container">
+                <div class="register-panel">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-right">
+                            <div class="register-title">
+                                <span class="glyphicon glyphicon-user fa-lg"></span>
+                                ورود به سایت
+                            </div>
+                            <div class="register-image pull-left">
+                                <img src="images/tinker2.png" alt="...">
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal" role="form" action="#" method="post">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-3 control-label">ایمیل</label>
+
+                                    <div class="col-sm-push-1 col-sm-8">
+                                        <input type="email" name="email" class="form-control" id="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-3 control-label">کلمه عبور</label>
+
+                                    <div class="col-sm-push-1 col-sm-8">
+                                        <input type="password" name="password" class="form-control" id="password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-8">
+                                        <div class="checkbox checkbox-success">
+                                            <input name="remember" id="remember" type="checkbox">
+                                            <label for="remember">
+                                                من را بخاطر بسپار
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-block btn-learn register-btn">ورود به سایت</button>
+                            </form>
+                        </div>
+                        <div class="panel-footer">
+                            آیا تاکنون عضو نشده اید؟
+                            <a class="registration-link" href="#">پس همین الان عضو شوید</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--header ends-->
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/typed.js"></script>
+<script>
+    $(function () {
+        $(".element").typed({
+            strings: ["Hi Guys, I'm <span style='color:red'>Tinker</span>.^5000 <br>$ Second sentence.^5000 <br>$ Well I wanna Learn how to Code clearly.^5000 <br>$ Hi Emad what do you think about it.^5000 <br>$ We are working hard to make it.^5000 <br>$ "],
+            typeSpeed: 10,
+            loop: true,
+            backDelay: 5000,
+            contentType: 'html'
+        });
+    });
+</script>
+<script src="js/custom.js"></script>
+</body>
+</html>

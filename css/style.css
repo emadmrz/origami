@@ -8,7 +8,8 @@
     5 - Right Main Menu Content (panel+media+...)
     6 - Left Main Menu Content (panel+media+...)
     7 - General Buttons
-    8 - Register Page
+    8 - Register && Login Page
+    9 - Comments
     8 - Media Queries
 
 */
@@ -24,6 +25,9 @@ body {
 }
 img{
     max-width: 100%;
+}
+hr{
+    border-color: #DDDDDD;
 }
 /*----------------------------- 2 - Header -------------------------------*/
 header {
@@ -443,7 +447,42 @@ main .course-price-box a{
     text-decoration: none;
     color: #ffffff;
 }
-
+main .session-tags{
+    width: 100%;
+    padding: 4px 10px;
+    background-color: #DDDDDD;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    padding-top: 10px;
+}
+main .session-tags .tags-container{
+    padding-right: 0;
+}
+main .session-tags ul{
+    float: right;
+    padding-right: 0px;
+}
+main .session-tags ul li{
+    float: right;
+    list-style: none;
+}
+main .session-tags ul li a{
+    text-decoration: none;
+    color: #777777;
+    font-size: 12px;
+}
+main .session-tags ul li a:hover{
+    color: #666666;
+}
+main .session-tags ul li a::after{
+    content: " ، ";
+}
+main .session-tags ul li:last-child a::after{
+    content: "";
+}
+main .session-tags i.fa{
+    margin-left: 5px;
+}
 /*----------------------------- 7 - General Buttons -------------------------------*/
 .btn i {
     margin-left: 3px;
@@ -463,7 +502,7 @@ input:focus {
     border-color: #ccc !important;
 }
 
-/*----------------------------- 8 - Register Page -------------------------------*/
+/*----------------------------- 8 - Register && Login Page -------------------------------*/
 .register-container {
     float: none ;
     display: block;
@@ -506,9 +545,77 @@ input:focus {
 button.register-btn {
 
 }
+.checkbox label{
+    margin-right: 15px;
+}
+input[type=checkbox]{
+    cursor: pointer;
+}
+.checkbox.checkbox-success input[type=checkbox]{
+    width: 18px;
+    height: 18px;
+    margin-right: 0;
+}
+.checkbox.checkbox-success input[type=checkbox]:checked::before {
+    content: "\2714";
+    background-color: #5cb85c;
+    font-size: 10px;
+    border-radius: 3px;
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    top: 0;
+    bottom: 10px;
+    right: 0px;
+    position: absolute;
+    padding-right: 5px;
+    padding-bottom: 3px;
+}
 
-/*----------------------------- 9 - Course Main Page -------------------------------*/
-
+/*----------------------------- 9 - Comments -------------------------------*/
+.comment-container .new-comment{
+    /*margin-bottom: 20px;*/
+}
+.comment-container .new-comment .media-body textarea{
+    width: 100%;
+    padding: 10px;
+    border-color: #DDDDDD;
+    border-radius: 2px;
+    font-size: 12px;
+    height: 70px;
+}
+.comment-container .new-comment .btn-submit{
+    font-size: 13px;
+}
+.comment-container .new-comment .media-right a{
+    display: block;
+    width: 70px;
+}
+.comment-container .new-comment .media-right a img{
+    border-radius: 2px;
+}
+.comment-container .comment-list{
+    margin-bottom: 20px;
+}
+.comment-container .comment-list .media-right a{
+    display: block;
+    width: 70px;
+}
+.comment-container .comment-list .media-body .media-heading a{
+    color: #666666;
+    text-decoration: none;
+}
+.comment-container .comment-list .media-body .media-heading a:hover{
+    color: #444444;
+}
+.comment-container .comment-list .media-body .info{
+    color: #666666;
+    font-size: 11px;
+    margin-right: 20px;
+}
+.comment-container .comment-list .media-body {
+    font-size: 13px;
+}
 
 /*----------------------------- 8 - Media Queries -------------------------------*/
 
