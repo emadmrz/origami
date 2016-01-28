@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Learn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/font.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+        header {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<!--header begins-->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 center-block register-container">
+                <div class="register-panel">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-right">
+                            <div class="register-title">
+                                <span class="glyphicon glyphicon-user fa-lg"></span>
+                                عضویت در سایت
+                            </div>
+                            <div class="register-image pull-left">
+                                <img src="images/tinker2.png" alt="...">
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="register-form">
+                                <form class="form-horizontal" role="form" action="#" method="post">
+                                    <div class="form-group">
+                                        <label for="first_name" class="col-sm-4 control-label">نام</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" name="first_name" class="form-control" id="first_name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last_name" class="col-sm-4 control-label">نام خانوادگی</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" name="last_name" class="form-control" id="last_name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="col-sm-4 control-label">ایمیل</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="email" name="email" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="col-sm-4 control-label">انتخاب کلمه عبور</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="password" name="password" class="form-control" id="password">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password" class="col-sm-4 control-label">تکرار کلمه عبور</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="password" name="password" class="form-control" id="password">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 text-center register-description">
+                                        کلیک کردن بر روی پیوستن به ما بدین معنی است که شما
+                                        <a class="registration-link" href="#">شرایط و ضوابط فعالیت در سایت </a>
+                                        را مطالعه کرده و پذیرفته اید.
+                                    </div>
+                                    <button class="btn btn-block btn-learn register-btn">پیوستن به ما</button>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            آیا قبلا به ما پیوسته اید ؟
+                            <a class="registration-link" href="#">وارد حساب کاربری خود شوید</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--header ends-->
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/typed.js"></script>
+<script>
+    $(function () {
+        $(".element").typed({
+            strings: ["Hi Guys, I'm <span style='color:red'>Tinker</span>.^5000 <br>$ Second sentence.^5000 <br>$ Well I wanna Learn how to Code clearly.^5000 <br>$ Hi Emad what do you think about it.^5000 <br>$ We are working hard to make it.^5000 <br>$ "],
+            typeSpeed: 10,
+            loop: true,
+            backDelay: 5000,
+            contentType: 'html'
+        });
+    });
+</script>
+<script src="js/custom.js"></script>
+</body>
+</html>
