@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
     <link type="text/css" rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/video-js.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/font.css">
     <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
@@ -251,11 +252,13 @@
                             </div>
                             <button class="btn btn-learn">دانلود این قسمت</button>
                             <div class="image text-center">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <video loop controls class="embed-responsive-item">
-                                        <source src='video/1.MP4' type=video/mp4>
-                                    </video>
-                                </div>
+                                <video id="example_video_1" class="video-js vjs-default-skin"
+                                       controls preload="auto"
+                                       poster="images/angular-poster.png"
+                                       data-setup='{"example_option":true}'>
+                                    <source src="video/1.MP4" type='video/mp4'/>
+
+                                </video>
                             </div>
                             <div class="text-right">
                             <span class="text-muted">
@@ -321,67 +324,111 @@
                     </div>
                     <!--comment begins -->
                     <div class="comment-container">
-                        <!--cew comment begins-->
-                        <div class="new-comment">
-                            <form action="#">
-                                <div class="media">
-                                    <div class="media-right">
-                                        <a href="#">
-                                            <img src="images/person1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <textarea name="body" placeholder="نظر خود را وارد نمایید"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-learn btn-submit">
-                                        <i class="fa fa-paper-plane-o"></i>
-                                        ثبت دیدگاه
-                                    </button>
-                                    <hr>
-                                </div>
-                            </form>
-                        </div>
-                        <!--new comment ends-->
-                        <!--all comment begin-->
-                            <div class="comment-list">
-                                <div class="media">
-                                    <div class="media-right">
-                                        <a href="#">
-                                            <img src="images/person1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="media-heading">
-                                            <a href="#">
-                                                احمد دارا
-                                            </a>
-                                            <span class="info">2 روز پیش</span>
-                                        </h5>
-                                        <p>
-                                            ممنون از آموزش آنگولار ، عالی بود .
-                                        </p>
+                        <div class="panel panel-default">
+                            <div class="comment-panel">
+                                <div class="panel-heading">
+                                    <div class="title">
+                                        نظرات و دیدگاه ها
                                     </div>
                                 </div>
-                                <div class="media">
-                                    <div class="media-right">
-                                        <a href="#">
-                                            <img src="images/person1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="media-heading">
-                                            <a href="#">
-                                                احمد دارا
-                                            </a>
-                                            <span class="info">2 روز پیش</span>
-                                        </h5>
-                                        <p>
-                                            ممنون از آموزش آنگولار ، عالی بود .
-                                        </p>
+                                <div class="panel-body">
+                                    <div class="comment-list">
+                                        <!--all comments begins-->
+                                        <ul class="media-list">
+                                            <!--each comment begins-->
+                                            <li class="media">
+                                                <div class="media-right">
+                                                    <a href="#">
+                                                        <img class="media-object" src="images/person1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body comment-media">
+                                                    <a class="comment-author" href="#">
+                                                        احمد دارا
+                                                    </a>
+
+                                                    <div class="pull-left date-container">
+                                                        <span class="comment-date">در سه شنبه 06 بهمن 1394  |</span>
+                                                        <a class="pull-left" href="#"> پاسخ</a>
+                                                    </div>
+
+                                                    <p>
+                                                        سلام خسته نباشید من دوره قبل رو دیدم خیلی عالی بود ممنون ولی
+                                                        وقتی رو شروع یادگیری این دوره کلیک میکنم گزینه پرداخت نمیاد مشکل
+                                                        چیه؟ممنون میشم اگه راهنمایی کنید
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="media reply">
+                                                <div class="media-right">
+                                                    <a href="#">
+                                                        <img class="media-object" src="images/person1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body comment-media">
+                                                    <a class="comment-author" href="#">
+                                                        احمد دارا
+                                                    </a>
+
+                                                    <div class="pull-left date-container">
+                                                        <span class="comment-date">در چهارشنبه 07 بهمن 1394</span>
+                                                    </div>
+
+                                                    <p>
+                                                        سلام خسته نباشید من دوره قبل رو دیدم خیلی عالی بود ممنون ولی
+                                                        وقتی رو شروع یادگیری این دوره کلیک میکنم گزینه پرداخت نمیاد مشکل
+                                                        چیه؟ممنون میشم اگه راهنمایی کنید
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <div class="media-right">
+                                                    <a href="#">
+                                                        <img class="media-object" src="images/person1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body comment-media">
+                                                    <a class="comment-author" href="#">
+                                                        احمد دارا
+                                                    </a>
+
+                                                    <div class="pull-left date-container">
+                                                        <span class="comment-date">در سه شنبه 06 بهمن 1394  |</span>
+                                                        <a class="pull-left" href="#"> پاسخ</a>
+                                                    </div>
+
+                                                    <p>
+                                                        سلام خسته نباشید من دوره قبل رو دیدم خیلی عالی بود ممنون ولی
+                                                        وقتی رو شروع یادگیری این دوره کلیک میکنم گزینه پرداخت نمیاد مشکل
+                                                        چیه؟ممنون میشم اگه راهنمایی کنید
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <!--each comment ends-->
+                                            <li class="media comment-form">
+                                                <div class="media-right">
+                                                    <a href="#">
+                                                        <img class="media-object" src="images/person1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <form class="form-horizontal" action="#">
+                                                        <textarea class="form-control"
+                                                                  placeholder="لطفا نظر خود را وارد نمایید ..."
+                                                                  name="body" id=""></textarea>
+                                                        <button type="submit" class="btn btn-learn">
+                                                            <i class="fa fa-paper-plane-o"></i>
+                                                            ارسال نظر
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!--all comments ends-->
                                     </div>
                                 </div>
                             </div>
-                        <!--all comment ends-->
+                        </div>
                     </div>
                     <!--comment ends-->
                 </div>
@@ -406,6 +453,7 @@
         });
     });
 </script>
+<script src="js/video.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>
